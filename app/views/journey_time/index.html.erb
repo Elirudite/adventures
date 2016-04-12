@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adventures</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+
+<%= yield %>
+
+<h1>Homebase: Your Adventurer's Log</h1>
+<h2>Places you've visited</h2>
+<ul>
+	<li>Georgia</li>
+	<li>New York</li>
+	<li>Skyrim</li>
+	<li>South Heaven</li>
+	<li>Oshonia</li>
+</ul>
+<h2>Things you've done</h2>
+<ul>
+	<li>Imagineering</li>
+	<li>Urban Camping</li>
+	<li>Dragon Slaying</li>
+	<li>Dao Cultivation</li>
+	<li>Worldbuilding</li>
+</ul>
+<p></p>
+<p></p>
+
+<%= link_to "Check out the FAQs!", ilovetocode_path %>
+
+</body>
+</html>
+
+
